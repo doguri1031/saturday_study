@@ -8,13 +8,14 @@ public class UnaryOperator {
 
 		int x = 1;
 		int y = 1;
+
+		System.out.println(x++);
+		System.out.println(++y);
+		System.out.println(x);
+
+		x = 10;
+		y = x-- + 5 + --x;
 		
-//		System.out.println(x++);
-//		System.out.println(++y);
-//		System.out.println(x);
-		
-		Scanner sc = new Scanner(System.in);
-		int pharse = sc.nextInt();
-		System.out.println(x + pharse);
+		System.out.println(y);
 	}
 }
