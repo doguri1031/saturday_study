@@ -23,6 +23,9 @@ public class TypePractice {
 		System.out.println(plus3);
 		System.out.println(flag);
 		System.out.println(1>2);
+		System.out.println(1+1);
+	    System.out.println(nomal);
+	    System.out.println(small);
 		
 	}
 
