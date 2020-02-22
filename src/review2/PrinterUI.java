@@ -1,4 +1,4 @@
-package review1;
+package review2;
 
 import java.util.Scanner;
 
@@ -27,7 +27,7 @@ public class PrinterUI {
             if (find_p == null) {
                System.out.println("등록된 정보가 없습니다");
             } else {
-               find_p.toString();
+               manager.output();
             }
             break;
 

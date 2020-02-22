@@ -16,7 +16,7 @@ public class PrinterManager {
    
    public boolean insertPrinter(Printer s) {
       
-      for(int i = 0;i<printerCount;i++){
+      for(int i = 0; i<printerCount;i++){
          if(s.getId().equals(printerList[i].getId()))
             return false;
 
@@ -58,7 +58,7 @@ public class PrinterManager {
    public void output() {
       if(printerCount!=0){
          for (int i = 0; i < printerCount; i++){
-            printerList[i].output();
+            printerList[i].toString();
          }
    
       

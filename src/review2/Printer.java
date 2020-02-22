@@ -1,4 +1,7 @@
-package review1;
+package review2;
+
+import java.util.Optional;
+
 public class Printer {
 	private String id;				
 	private String manufacturer; 	
@@ -22,27 +25,22 @@ public class Printer {
 	public String getManufacturer() {
 		return manufacturer;
 	}
-
+	
 	public void setManufacturer(String manufacturer) {
 		this.manufacturer = manufacturer;
 	}
 
-	public int getPrice() {
-		return price;
+	public Optional<Integer> getPrice() {
+		return Optional.ofNullable(price);
 	}
-
 	public void setPrice(int price) {
 		this.price = price;
 	}
 	
 	@Override
 	public String toString() {
-		return "Printer [id=" + id + ", manufacturer=" + manufacturer + ", price=" + price + "]";
+		return String.format("ID는 [%s] Manufacturer는 [%s] price는 [%d]", id, manufacturer, price);
 	}				
-	
-	
-	
-
 	
 }
 

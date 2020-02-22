@@ -2,17 +2,21 @@ package day5_example1;
 
 public class Person {
 	int age;
+	
 	public String name;
 	protected int height;
-	private int weight;
+	public int weight;
+	private String gender;
 
-	public void setWeight(int weight) {
-		this.weight = weight;
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
-	public int getWeight() {
+	public String getGender() {
 
-		return weight;
+		return gender;
 
 	}
+	
+	
 }
